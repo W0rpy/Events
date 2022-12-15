@@ -1,0 +1,103 @@
+.Card {
+   background-color: #FFFFFF;
+   border-radius: 35px;
+   padding: 50px 30px 50px;
+   width: 500px;
+}
+
+
+.CardBody {
+   padding: 0px 0px 0px 15px;
+}
+
+.CardField {
+   display: flex;
+
+   &:not(:last-child) {
+      margin-bottom: 5px;
+   }
+}
+
+.CardName {
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+.CardIcon {
+   margin-right: 10px;
+}
+
+.CardText {
+   font-size: 22px;
+   font-weight: 600;
+
+   & span {
+      font-weight: 300;
+      font-size: 20px;
+   }
+}
+
+/*------------------------------------------*/
+@media (max-width:550px) {
+   .Card {
+      padding: 40px 20px 40px;
+      width: 100%;
+   }
+}
+
+@media (max-width:480px) {
+   .Card {
+      padding: 30px 15px 30px;
+   }
+
+   .CardText {
+      font-size: 20px;
+      line-height: 1.4;
+
+      & span {
+         font-size: 18px;
+      }
+   }
+
+   .CardName {
+      font-size: 22px;
+      margin-bottom: 10px;
+   }
+}
+
+@media (max-width:374.98px) {
+   .CardBody {
+      padding: 0px 0px 0px 10px;
+   }
+
+   .Card {
+      padding: 25px 10px 20px;
+   }
+
+   .CardName {
+      font-size: 20px;
+      line-height: 1.4;
+   }
+
+   .CardIcon {
+      margin-right: 5px;
+   }
+
+   .CardText {
+      font-size: 18px;
+
+      & span {
+         font-size: 16px;
+      }
+   }
+
+   .CardField {
+      align-items: center;
+
+      &:nth-child(4) {
+         align-items: flex-start;
+      }
+   }
+
+}

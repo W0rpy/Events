@@ -1,0 +1,31 @@
+.SessionsContent {
+   padding: 110px 0px 50px;
+   position: relative;
+}
+
+.SessionCard {
+   font-weight: 500;
+
+   & span {
+      color: #727272;
+      font-weight: 400;
+   }
+}
+
+.ContentFab {
+   position: absolute;
+   bottom: 100px;
+   right: 10px;
+}
+
+@media (max-width:1199.98px) {
+   .SessionsContent {
+      padding: 90px 0px 50px;
+   }
+}
+
+@media (max-width:766.98px) {
+   .SessionsContent {
+      padding: 80px 0px 50px;
+   }
+}

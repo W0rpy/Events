@@ -1,0 +1,107 @@
+.MainPageContent {
+   padding: 200px 0px 0px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.ContentText {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.TextTitle {
+   font-size: 48px;
+   font-weight: 500;
+   margin-bottom: 60px;
+}
+
+.TextSubtitle {
+   font-size: 16px;
+   color: #727272;
+
+   &:not(:last-child) {
+      margin-bottom: 30px;
+   }
+}
+
+.ContentImage {
+   display: flex;
+   justify-content: center;
+}
+
+/*------------------------------------*/
+@media (max-width:1198.98px) {
+
+   .TextTitle {
+      margin-bottom: 40px;
+   }
+}
+
+@media (max-width:991.98px) {
+   .MainPageContent {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .TextTitle {
+      margin-bottom: 30px;
+      font-size: 40px;
+   }
+
+   .ContentText {
+      padding: 0px 0px 0px 20px;
+   }
+}
+
+@media (max-width:766.98px) {
+   .MainPageContent {
+      flex-wrap: wrap;
+      align-items: center;
+   }
+
+   .ContentImage {
+      flex: 100%;
+      margin-bottom: 30px;
+   }
+
+   .ContentText {
+      text-align: center;
+   }
+
+   .TextTitle {
+      margin-bottom: 20px;
+   }
+
+   .ContentText {
+      padding: 0px;
+   }
+
+   .MainPageContent {
+      padding: 160px 0px 0px;
+   }
+
+}
+
+@media (max-width:394px) {
+   .MainImage {
+      width: 320px;
+      height: 220px;
+   }
+
+   .TextSubtitle {
+      line-height: 1.4;
+   }
+}
+
+@media (max-width:350px) {
+   .MainImage {
+      width: 290px;
+      height: 210px;
+   }
+
+   .TextTitle {
+      margin-bottom: 15px;
+      font-size: 35px;
+   }
+}

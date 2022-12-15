@@ -1,0 +1,62 @@
+.ErrorPage {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.ErrorContent {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+}
+
+.ErrorText {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.ErrorTitle {
+   font-weight: 600;
+   font-size: 25px;
+   margin-bottom: 15px;
+}
+
+.SubTitle {
+   font-size: 20px;
+}
+
+/*-------------------------------------------*/
+@media (max-width:991px) {
+   .ErrorPicture {
+      width: 401px;
+      height: 320px;
+   }
+}
+
+/*-------------------------------------------*/
+@media (max-width:480px) {
+   .ErrorPicture {
+      width: 295px;
+      height: 237px;
+   }
+
+}
+
+@media (max-height:676.98px) {
+   .ErrorPicture {
+      width: 225px;
+      height: 187px;
+   }
+
+   .ErrorContent {
+      padding-top: 20px;
+   }
+}
