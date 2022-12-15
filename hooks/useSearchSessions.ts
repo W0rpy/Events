@@ -8,12 +8,12 @@ export const useSearchLocation = (location: string, sessions: IEvent[]) => {
       } else {
          return sessions;
       }
-   }, [location, sessions])
+   }, [location, sessions]);
 
    return selectLocation;
 }
 export const useSearchCategory = (category: string, location: string, sessions: IEvent[]) => {
-   const selectLocation = useSearchLocation(location, sessions)
+   const selectLocation = useSearchLocation(location, sessions);
 
    const selectCategory = useMemo(() => {
       if (category !== 'All CATEGORIES') {
@@ -21,25 +21,25 @@ export const useSearchCategory = (category: string, location: string, sessions: 
       } else {
          return selectLocation;
       }
-   }, [category, selectLocation])
+   }, [category, selectLocation]);
 
    return selectCategory;
 }
 export const useSearchPrice = (price: number[], category: string, location: string, sessions: IEvent[]) => {
-   const selectCategory = useSearchCategory(category, location, sessions)
+   const selectCategory = useSearchCategory(category, location, sessions);
    const selectPrice = useMemo(() => {
       return selectCategory.filter((session) => price[0] <= session.price && session.price <= price[1])
-   }, [price[0], price[1], selectCategory])
+   }, [price, selectCategory]);
 
    return selectPrice;
 }
 export const useSearchQuery = (query: string, price: number[], category: string, location: string, sessions: IEvent[]) => {
 
-   const selectPrice = useSearchPrice(price, category, location, sessions)
+   const selectPrice = useSearchPrice(price, category, location, sessions);
    const searchQuery = useMemo(() => {
-      return selectPrice.filter((session) => session.name.toLowerCase().includes(query.toLocaleLowerCase()))
+      return selectPrice.filter((session) => session.name.toLowerCase().includes(query.toLocaleLowerCase()));
 
-   }, [query, selectPrice])
+   }, [query, selectPrice]);
 
    return searchQuery;
 }
