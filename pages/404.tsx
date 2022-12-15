@@ -13,8 +13,8 @@ const Error: FC = () => {
                      <Image src={error} width={501} height={400} alt='Error Picture' className={styles.ErrorPicture} />
                   </div>
                   <div className={styles.ErrorText}>
-                     <div className={styles.ErrorTitle}>AWWW...DON’T CRY.</div>
-                     <div className={styles.SubTitle}>It's just a 404 Error!</div>
+                     <div className={styles.ErrorTitle}>AWWW...DONT CRY.</div>
+                     <div className={styles.SubTitle}>Its just a 404 Error!</div>
                   </div>
                </div>
             </div>
