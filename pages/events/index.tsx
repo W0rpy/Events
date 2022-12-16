@@ -14,7 +14,7 @@ import { Fab } from "@mui/material";
 export const getServerSideProps: GetServerSideProps = async () => {
 
    try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_HOST}/data/allevents/`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/data/allevents/`);
       const data = await response.json();
 
       if (!data) {
