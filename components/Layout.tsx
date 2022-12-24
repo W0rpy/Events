@@ -24,6 +24,13 @@ const theme = createTheme({
             }
          }
       },
+      MuiSvgIcon: {
+         styleOverrides: {
+            root: {
+               color: '#34547A',
+            }
+         }
+      },
       MuiOutlinedInput: {
          styleOverrides: {
             root: {

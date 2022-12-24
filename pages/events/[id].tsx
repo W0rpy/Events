@@ -4,6 +4,7 @@ import SessionInfo from '../../components/SessionInfo';
 import PageTitle from "../../components/PageTitle";
 import useSWR from 'swr';
 import { useRouter } from 'next/router';
+import ErrorPage from '../404';
 
 const fetcher = async (url: string) => {
    const res = await fetch(url)
@@ -21,7 +22,7 @@ function Session() {
       fetcher
    )
 
-   if (error) return <div>{error.message}</div>
+   if (error) return <ErrorPage />
    if (!data) return <div>Loading...</div>
 
    return (

@@ -1,6 +1,6 @@
 import MainContainer from "./MainContainer";
 import { FC } from "react";
-import styles from '../styles/MainPage.module.scss';
+import styles from './MainPage.module.scss';
 import Image from "next/image";
 import web from './../public/images/web.png';
 const MainPage: FC = () => {

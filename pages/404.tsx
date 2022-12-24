@@ -1,9 +1,9 @@
 import { FC } from 'react';
-import styles from '../styles/Error.module.scss';
+import styles from '../styles/404.module.scss';
 import Image from 'next/image';
 import error from '../public/images/error.png';
 import MainContainer from '../components/MainContainer';
-const Error: FC = () => {
+const ErrorPage: FC = () => {
    return (
       <div className={styles.ErrorPage}>
          <MainContainer>
@@ -22,4 +22,4 @@ const Error: FC = () => {
       </div>
    )
 }
-export default Error;
+export default ErrorPage;

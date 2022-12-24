@@ -11,3 +11,9 @@ export interface IEvent {
    location: string
    category: string
 }
+export interface KeyOfEvent {
+   name: string
+   date: string
+   location: string
+   category: string
+}

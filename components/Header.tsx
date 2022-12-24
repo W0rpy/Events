@@ -1,5 +1,5 @@
 import ContainerMain from './MainContainer';
-import styles from '../styles/Header.module.scss';
+import styles from './Header.module.scss';
 import { FC } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';

@@ -14,3 +14,11 @@ export const categories = [
    { value: 'CONTEST', name: 'CONTEST' },
    { value: 'FESTIVAL', name: 'FESTIVAL' }
 ]
+export const sortCategories =
+   [{ value: 'All Values', name: 'All Values' },
+   { value: 'name', name: 'Name' },
+   { value: 'date', name: 'Date' },
+   { value: 'location', name: 'Location' },
+   { value: 'category', name: 'Category' },
+   { value: 'price', name: 'Price' },
+   ]

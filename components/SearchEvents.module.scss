@@ -1,0 +1,165 @@
+.SearchContent {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   flex-wrap: wrap;
+}
+
+.SearchQuery {
+   flex: 0 1 560px;
+   margin-bottom: 20px;
+}
+
+.SearchSelect,
+.SearchDate,
+.SortedCategories {
+   width: 250px;
+}
+
+.SearchSelect {
+   margin-bottom: 20px;
+}
+
+.SearchResult {
+   font-size: 16px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+
+.SearchSlider {
+   width: 250px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.StartingPrice {
+   margin-right: 15px;
+   font-weight: 500;
+}
+
+.FinalPrice {
+   margin-left: 15px;
+   font-weight: 500;
+}
+
+
+/*--------------------------------*/
+@media (max-width:1199.98px) {
+   .SearchSlider {
+      margin-bottom: 20px;
+   }
+
+   .SortedCategories {
+      margin-bottom: 20px;
+   }
+
+   .SearchSelect,
+   .SearchSlider,
+   .SortedCategories {
+      width: 300px;
+      margin-bottom: 20px;
+   }
+
+   .SearchDate {
+      width: 300px;
+   }
+
+   .SearchQuery {
+      flex: 0 1 620px;
+   }
+
+}
+
+/*-----------------------------*/
+@media (max-width:991.98px) {
+   .SearchQuery {
+      flex: 0 1 100%;
+   }
+
+   .SearchSelect,
+   .SearchDate,
+   .SearchSlider,
+   .SortedCategories {
+      width: 225px;
+   }
+
+   .SortedCategories {
+      margin: 0px;
+   }
+}
+
+/*--------------------------------*/
+@media (max-width:766.98px) {
+
+   .SearchSelect,
+   .SearchSlider,
+   .SearchQuery {
+      margin-bottom: 15px;
+   }
+
+   .SearchSelect,
+   .SortedCategories {
+      margin-right: 15px;
+   }
+
+   .SearchDate {
+
+      &:not(:last-child) {
+         margin-right: 15px;
+      }
+   }
+}
+
+/*--------------------------*/
+@media (max-width:724.98px) {
+
+   .SearchSelect,
+   .SearchSlider,
+   .SortedCategories {
+      margin-right: 0px;
+      width: 300px;
+   }
+
+   .SearchDate {
+      width: 300px;
+
+      &:not(:last-child) {
+         margin-right: 0px;
+      }
+   }
+}
+
+@media (max-width:635px) {
+
+   .SearchSelect,
+   .SearchSlider,
+   .SortedCategories {
+      width: 250px;
+   }
+
+   .SearchDate {
+      width: 250px;
+   }
+}
+
+/*--------------------------------*/
+@media (max-width:535px) {
+
+   .SearchSelect,
+   .SearchDate,
+   .SearchSlider,
+   .SortedCategories {
+      width: 100%;
+   }
+
+   .SortedCategories {
+      margin-bottom: 15px;
+   }
+
+   .SearchDate {
+      &:not(:last-child) {
+         margin-bottom: 15px;
+      }
+   }
+}

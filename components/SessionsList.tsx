@@ -1,9 +1,10 @@
 import Grid from '@mui/material/Grid';
 import Link from "next/link";
 import { Card, CardContent, Pagination, Stack } from "@mui/material";
-import styles from '../styles/SessionsList.module.scss';
+import styles from './SessionsList.module.scss';
 import { IEvent } from '../models/types';
 import { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
 
 interface SessionsProps {
    sessions: IEvent[]
@@ -40,7 +41,7 @@ function SessionsList({ sessions }: SessionsProps) {
                            <CardContent>
                               <div className={styles.SessionCard}>{session.name}</div>
                               <div className={styles.SessionCard}>Category: <span>{session.category}</span></div>
-                              <div className={styles.SessionCard}>Date: <span>{session.date}</span></div>
+                              <div className={styles.SessionCard}>Date: <span>{dayjs(session.date).format("YYYY/MM/DD hh:mm a")}</span></div>
                               <div className={styles.SessionCard}>Location: <span>{session.location}</span></div>
                               <div className={styles.SessionCard}>Price: <span>{session.price}</span></div>
                            </CardContent>
